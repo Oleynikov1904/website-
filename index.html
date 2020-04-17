@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>История искусства</title>
+    <link rel="stylesheet" href="mainstyle.css" />
+  </head>
+
+  <body>
+    <div class="col-12 col-11 col-10 col-9 col-8 col-7 col-6 col-5 col-4 col-3 col-2 col-1">
+      <div class="row">
+        <header>
+          <div class="col-10 fon"> 
+            <div class="menu-container">
+              <nav class="nav">
+                <div class="menu_img">
+                  <a href="index.html">
+                    <img
+                      src="img/f=JPEG.jpg"
+                      class="img"
+                      width= "30px"
+                      height="auto"/> </a>
+                </div>
+                <div class="dropdown">
+                  <a href="onepage.html">История Древнего Мира</a>
+                  <div class="dropdown-content">
+                    <a href="onepage.html#Egipt">Искусство Древнего Египта</a>
+                    <a href="onepage.html#Kit">Искусство Древнего Китая</a>
+                    <a href="onepage.html#Gr">Искусство Древней Греции</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a href="twopage.html">Средневековое искусство</a>
+                    <div class="dropdown-content">
+                      <a href="#">Искусство Древнего Египта</a>
+                      <a href="#">Искусство Древне</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                  <a href="threepage.html">Возрождение</a>  
+                    <div class="dropdown-content">
+                      <a href="#">Искусство Древнего Египта</a>
+                      <a href="#">Искусство Древне</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                  <a href="fourpage.html">Искусство 17-20 веков</a> 
+                    <div class="dropdown-content">
+                      <a href="#">Искусство Древнего Египта</a>
+                      <a href="#">Искусство Древне</a>
+                    </div>
+                </div>
+              </nav>
+            </div>
+            <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          
+          </div> 
+
+            <script>
+              function myFunction(x) {
+                x.classList.toggle("change");
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+                }
+            </script>
+            <div class="topnav">
+              <!-- Навигационные ссылки (по умолчанию скрыты) -->
+              <div id="myLinks">
+                <a href="onepage.html">История Древнего Мира</a>
+                <a href="twopage.html">Средневековое искусство</a>
+                <a href="threepage.html">Возрождение</a>  
+                <a href="fourpage.html">Искусство 17-20 веков</a> 
+              </div>
+            </div>
+            <script>
+              
+            </script>
+            
+          
+        </header>
+
+        <div class="main-content">
+          <div class="col-10 mir fade">
+            <div class="numbertext">1 / 3</div>
+            <a href="onepage.html">
+              <img src="img/eyiW4xAPpcs.jpg" width="100%" height="800px"/>
+            </a>
+            <a href="onepage.html">
+              <h1>История Древнего Мира</h1>
+            </a>
+          </div>
+          <div class="col-10 mir fade">
+            <div class="numbertext">2 / 3</div>
+            <a href="onepage.html">
+              <img src="img/vIwE5xh5jCM.jpg" width="100%" height="800px"/>
+            </a>
+            <a href="onepage.html">
+              <h1>История Древнего Мира</h1>
+            </a>
+          </div>
+          <div class="col-10 mir fade">
+            <div class="numbertext">3 / 3</div>
+            <a href="onepage.html">
+              <img src="img/KiGDLg7V9q8.jpg" width="100%" height="800px"/>
+            </a>
+            <a href="onepage.html">
+              <h1>История Древнего Мира</h1>
+            </a>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+          <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          // Вперед/назад элементы управления
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          // Элементы управления миниатюрами изображений
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mir");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+        
+          <div class="col-10 polosa">
+              <div class="col-6 levo">
+                <div class="sredne fade">
+                  <div class="numbertext2">1 / 3</div>
+                    <a href="twopage.html">
+                      <img src="img/BXfw2jXjMdY.jpg" width="100%" height="550px"/>
+                    </a>
+                    <a href="twopage.html">
+                      <h1>Средневековое искусство</h1>
+                    </a>
+                </div>
+                <div class="sredne fade">
+                  <div class="numbertext2">2 / 3</div>
+                    <a href="twopage.html">
+                      <img src="img/70k9km8Q12s.jpg" width="100%" height="550px"/>
+                    </a>
+                    <a href="twopage.html">
+                      <h1>Средневековое искусство</h1>
+                    </a>
+                </div>
+                <div class="sredne fade">
+                  <div class="numbertext2">3 / 3</div>
+                    <a href="twopage.html">
+                      <img src="img/NkzChVz68h0.jpg" width="100%" height="550px"/>
+                    </a>
+                    <a href="twopage.html">
+                      <h1>Средневековое искусство</h1>
+                    </a>
+                </div>
+                <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot2" onclick="currentSlide(1)"></span>
+                  <span class="dot2" onclick="currentSlide(2)"></span>
+                  <span class="dot2" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+
+              <script>
+                var slideIndex2 = 1;
+                showSlides2(slideIndex2);
+
+                // Вперед/назад элементы управления
+                function plusSlides2(n) {
+                  showSlides2(slideIndex2 += n);
+                }
+
+                // Элементы управления миниатюрами изображений
+                function currentSlide(n) {
+                  showSlides2(slideIndex2 = n);
+                }
+
+                function showSlides2(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("sredne");
+                  var dots = document.getElementsByClassName("dot2");
+                  if (n > slides.length) {slideIndex2 = 1}
+                  if (n < 1) {slideIndex2 = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex2-1].style.display = "block";
+                  dots[slideIndex2-1].className += " active";
+                }
+              </script> 
+
+              <div class="col-6 pravo">
+                <div class="vosro fade">
+                  <div class="numbertext3">1 / 3</div>
+                  <a href="threepage.html">
+                    <img src="img/aZwtJK27tHA.jpg" width="100%" height="550px"/>
+                  </a>
+                  <a href="threepage.html">
+                    <h1>Возрождение</h1>
+                  </a>
+                </div>
+                <div class="vosro fade">
+                  <div class="numbertext3">2 / 3</div>
+                  <a href="threepage.html">
+                    <img src="img/MAV_9ylCgA8.jpg" width="100%" height="550px"/>
+                  </a>
+                  <a href="threepage.html">
+                    <h1>Возрождение</h1>
+                  </a>
+                </div>
+                <div class="vosro fade">
+                  <div class="numbertext3">3 / 3</div>
+                  <a href="threepage.html">
+                    <img src="img/qCv4iqT7OgU.jpg" width="100%" height="550px"/>
+                  </a>
+                  <a href="threepage.html">
+                    <h1>Возрождение</h1>
+                  </a>
+                </div>
+                <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+                <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot3" onclick="currentSlide(1)"></span>
+                  <span class="dot3" onclick="currentSlide(2)"></span>
+                  <span class="dot3" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+
+          </div>
+        
+        <script>
+          var slideIndex3 = 1;
+          showSlides3(slideIndex3);
+
+          // Вперед/назад элементы управления
+          function plusSlides3(n) {
+            showSlides3(slideIndex3 += n);
+          }
+
+          // Элементы управления миниатюрами изображений
+          function currentSlide(n) {
+            showSlides3(slideIndex3 = n);
+          }
+
+          function showSlides3(n) {
+            var i;
+            var slides = document.getElementsByClassName("vosro");
+            var dots = document.getElementsByClassName("dot3");
+            if (n > slides.length) {slideIndex3 = 1}
+            if (n < 1) {slideIndex3 = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex3-1].style.display = "block";
+            dots[slideIndex3-1].className += " active";
+          }
+        </script>
+    
+          <div class="col-10 posl">
+            <div class="sovr fade">
+              <div class="numbertext4">1 / 3</div>
+                  <a href="fourpage.html">
+                    <img src="img/s1200 (1).jpg" width="100%" height="800px"/>
+                  </a>
+                  <a href="fourpage.html">
+                    <h1>Современное искусство</h1>
+                  </a>
+            </div>
+            <div class="sovr fade">
+              <div class="numbertext4">2 / 3</div>
+                  <a href="fourpage.html">
+                    <img src="img/s1200 (2).jpg" width="100%" height="800px"/>
+                  </a>
+                  <a href="fourpage.html">
+                    <h1>Современное искусство</h1>
+                  </a>
+            </div>
+            <div class="sovr fade">
+              <div class="numbertext4">3 / 3</div>
+                  <a href="fourpage.html">
+                    <img src="img/4542_foto_1_03.jpg" width="100%" height="800px"/>
+                  </a>
+                  <a href="fourpage.html">
+                    <h1>Современное искусство</h1>
+                  </a>
+            </div>
+            <a class="prev4" onclick="plusSlides4(-1)">&#10094;</a>
+            <a class="next4" onclick="plusSlides4(1)">&#10095;</a>
+            <br>
+              <div style="text-align:center">
+                <span class="dot4" onclick="currentSlide(1)"></span>
+                <span class="dot4" onclick="currentSlide(2)"></span>
+                <span class="dot4" onclick="currentSlide(3)"></span>
+              </div>
+          </div>
+      
+        </div>
+        <script>
+          var slideIndex4 = 1;
+          showSlides4(slideIndex4);
+
+          // Вперед/назад элементы управления
+          function plusSlides4(n) {
+            showSlides4(slideIndex4 += n);
+          }
+
+          // Элементы управления миниатюрами изображений
+          function currentSlide(n) {
+            showSlides4(slideIndex4 = n);
+          }
+
+          function showSlides4(n) {
+            var i;
+            var slides = document.getElementsByClassName("sovr");
+            var dots = document.getElementsByClassName("dot4");
+            if (n > slides.length) {slideIndex4 = 1}
+            if (n < 1) {slideIndex4 = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex4-1].style.display = "block";
+            dots[slideIndex4-1].className += " active";
+          }
+        </script>
+
+        <footer class="col-12 konec">
+          <p>Copyright Кирилл Олейников </p>
+        </footer>
+      </div>
+    </div>
+    
+  </body>
+</html>
